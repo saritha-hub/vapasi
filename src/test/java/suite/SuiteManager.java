@@ -24,6 +24,9 @@ public class SuiteManager {
         drivermanager.driver.manage().window().maximize();
         String baseurl = config.getProperty("base_url");
         drivermanager.driver.get(baseurl);
+      //String username = config.getProperty("username");
+      //System.out.println(username);
+      //drivermanager.driver.get(username);
 
 
     }
