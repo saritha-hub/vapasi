@@ -6,9 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pages.BasePage;
 import suite.SuiteManager;
 import util.DriverManager;
 import testdata.LoginCredentials;
+import pages.BasePage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,6 +22,14 @@ public class LoginTestNg extends SuiteManager {
 //        return new Object[][]{};
 //    }
 
+    public BasePage basePage;
+    public LoginPage1 loginPage1;
+    public HomePage homePage;
+
+   // basePage = new BasePage(DriverManager.driver);
+    //LoginPage1 = basePage.clickingButton();
+    //Homepage = loginpage1.login(loginid, password);
+
     @BeforeTest
     public void enterDetails(){
 
@@ -27,7 +37,7 @@ public class LoginTestNg extends SuiteManager {
 
     }
 
-    @Test(dataProvider = "logincredentials", dataProviderClass = LoginCredentials.class)
+   // @Test(dataProvider = "logincredentials", dataProviderClass = LoginCredentials.class)
     public void verifyLogin(String loginid, String password) {
        // System.setProperty("webdriver.chrome.driver", "/Users/techops/Downloads/chromedriver 5");
         //WebDriver driver = new ChromeDriver();

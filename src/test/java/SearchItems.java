@@ -28,7 +28,7 @@ public class SearchItems {
        driver.findElement(By.xpath("//span[text()='Ruby Baseball Jersey']")).click();
         /////
       //  driver.findElement(By.xpath("//button[text()='Apply']")).click();
-
+        driver.findElement(By.xpath("//input[@id='quantity']"));
         driver.findElement(By.xpath("//button[@id='add-to-cart-button']")).click();
 
         //for checkout automation

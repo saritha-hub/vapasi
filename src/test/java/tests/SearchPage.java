@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class SearchPage extends SuiteManager {
 
     ConfigFileReader config = new ConfigFileReader();
+
     @Test
     public void searchItem(){
         DriverManager.driver.manage().window().maximize();

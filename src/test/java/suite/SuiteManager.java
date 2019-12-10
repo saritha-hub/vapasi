@@ -12,6 +12,7 @@ public class SuiteManager {
 
     @BeforeSuite(alwaysRun = true)
     public void startDriver(){
+
         drivermanager = new DriverManager();
     }
 
