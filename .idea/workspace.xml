@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73c966c1-3860-4f82-b604-195f09db8e00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver 5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/suite/SuiteManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTestNg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/MavenSpreeEcommerce.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/drivers/chromedriver 5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/util/ConfigFileReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/util/DriverManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/suite/SuiteManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/tests/LoginTestNg.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/ConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ConfigFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/DriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TestData/Config/testConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestData/Config/testConfig.properties" afterDir="false" />
