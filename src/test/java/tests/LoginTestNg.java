@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.BasePage;
 import suite.SuiteManager;
-import util.DriverManager;
+import util.DriverManager1;
 import testdata.LoginCredentials;
 import pages.BasePage;
 
@@ -37,19 +37,19 @@ public class LoginTestNg extends SuiteManager {
 
     }
 
-   // @Test(dataProvider = "logincredentials", dataProviderClass = LoginCredentials.class)
+   @Test
     public void verifyLogin(String loginid, String password) {
        // System.setProperty("webdriver.chrome.driver", "/Users/techops/Downloads/chromedriver 5");
         //WebDriver driver = new ChromeDriver();
         //river.get("https://spree-vapasi-prod.herokuapp.com/");
 
         //DriverManager.driver.findElement(By.xpath("//li[@id='link-to-login']//a[@class='nav-link text-white']")).click();
-        DriverManager.driver.findElement(By.xpath("//li[@id='link-to-login']//a[@class='nav-link text-white']")).click();
+        DriverManager1.driver.findElement(By.xpath("//li[@id='link-to-login']//a[@class='nav-link text-white']")).click();
        // System.out.println(loginid);
 
       //  DriverManager.driver.findElement(By.id("spree_user_email")).sendKeys("sarita@gmail.com");
         //DriverManager.driver.findElement(By.id("spree_user_password")).sendKeys("12345678");
-        DriverManager.driver.findElement(By.name("commit")).click();
+        DriverManager1.driver.findElement(By.name("commit")).click();
 
     }
 

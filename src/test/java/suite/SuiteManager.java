@@ -4,20 +4,25 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import util.ConfigFileReader;
 import util.DriverManager;
+import util.DriverManager1;
+import java.net.MalformedURLException;
 
 public class SuiteManager {
 
-    DriverManager drivermanager;
+    DriverManager1 drivermanager;
+
     private static ConfigFileReader config =new ConfigFileReader();
 
     @BeforeSuite(alwaysRun = true)
-    public void startDriver(){
+    public void startDriver()  {
 
-        drivermanager = new DriverManager();
+        drivermanager = new DriverManager1();
     }
 
     @AfterSuite(alwaysRun = true)
+
     public void quitDriver(){
+
         drivermanager.driver.quit();
     }
 

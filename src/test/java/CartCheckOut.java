@@ -26,7 +26,7 @@ public class CartCheckOut {
         driver.findElement(By.xpath("//input[@type='search']")).sendKeys("ruby");
 
         driver.findElement(By.xpath("//span[text()='Ruby Baseball Jersey']")).click();
-        /////
+
 
 }
 
