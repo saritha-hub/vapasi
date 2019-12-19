@@ -28,6 +28,7 @@ public class CartCheckOut {
         driver.findElement(By.xpath("//span[text()='Ruby Baseball Jersey']")).click();
 
 
+
 }
 
 }

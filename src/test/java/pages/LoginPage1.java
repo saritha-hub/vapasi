@@ -1,4 +1,4 @@
-package tests;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +8,8 @@ import util.DriverManager;
 
 public class LoginPage1 extends SuiteManager {
 
-    public LoginPage1(){
+    public LoginPage1()
+    {
         PageFactory.initElements(DriverManager.driver,this);
     }
 
@@ -30,5 +31,10 @@ public class LoginPage1 extends SuiteManager {
         return new HomePage();
 
     }
+
+    public void getLoginPageTitle(){
+            DriverManager.driver.getTitle();
+    }
+
 
 }

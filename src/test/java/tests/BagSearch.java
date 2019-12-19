@@ -56,28 +56,22 @@ public class BagSearch extends SuiteManager {
 
         WebElement element11 = DriverManager1.driver.findElement(By.xpath("//span[@class='info mt-3 d-block' and @title='Ruby on Rails Baseball Jersey']"));
         String bag11 = element11.getText();
-        //System.out.println("bag11" + bag11);
 
         WebElement element22 = DriverManager1.driver.findElement(By.xpath("//span[@class='info mt-3 d-block' and @title='Ruby on Rails Bag']"));
         String bag22 = element22.getText();
-        //System.out.println("bag22" + bag22);
 
 
         WebElement element33 = DriverManager1.driver.findElement(By.xpath("//span[@class='info mt-3 d-block' and @title='Apache Baseball Jersey']"));
         String bag33 = element33.getText();
-        //System.out.println("bag33" + bag33);
 
         WebElement element44 = DriverManager1.driver.findElement(By.xpath("//span[@class='info mt-3 d-block' and @title='Ruby Baseball Jersey']"));
         String bag44 = element44.getText();
-        //System.out.println("bag44" + bag44);
 
         WebElement element55 = DriverManager1.driver.findElement(By.xpath("//span[@class='info mt-3 d-block' and @title='Spree Bag']"));
         String bag55 = element55.getText();
-        //System.out.println("bag55" + bag55);
 
         WebElement element66 = DriverManager1.driver.findElement(By.xpath("//span[@class='info mt-3 d-block' and @title='Spree Baseball Jersey']"));
         String bag66 = element66.getText();
-       // System.out.println("bag66" + bag66);
 
 
         ArrayList<String> list = new ArrayList<String>();
@@ -103,13 +97,31 @@ public class BagSearch extends SuiteManager {
             //
             //String text="bag";
 
+            System.out.println(list);
+
+
+
             for (int i = 0; i < list.size(); i++) {
                 // boolean ans = list.contains("bag") ;
                 String s1 = list.get(i);
-                //System.out.println("s1" + s1);
 
-                Assert.assertEquals(list.get(i),list.contains("bag"));
-                System.out.println("s1 " + s1);
+                //checking content bag is available in given text
+                Assert.assertTrue(list.get(i).contains("Bag"));
+                if(true){
+                    System.out.println("successfully found");
+
+                }
+                else{
+                    System.out.println("not found");
+                }
+
+                //System.out.println("s1" + s1);
+               // Assert.assertEquals(s1, list.contains("Bag") );
+
+
+
+                   // Assert.assertEquals(list.get(i), list.get(i).contains("Bag"));
+                    System.out.println("s1 " + s1);
 
 
 

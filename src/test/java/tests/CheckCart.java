@@ -8,7 +8,7 @@ import util.DriverManager;
 
 import java.util.concurrent.TimeUnit;
 
-public class Test1 extends SuiteManager {
+public class CheckCart extends SuiteManager {
 
     public BasePage basePage;
 
@@ -19,7 +19,9 @@ public class Test1 extends SuiteManager {
         DriverManager.driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
 
         basePage = new BasePage();
-       LoginPage1 loginpage1 =  basePage.clickingButton();
+        LoginPage1 loginpage1 =  basePage.clickingButton();
+
+
 
 
     }

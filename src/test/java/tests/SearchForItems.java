@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+import pages.LoginPage1;
 import suite.SuiteManager;
 import testdata.LoginCredentials;
 import util.DriverManager;

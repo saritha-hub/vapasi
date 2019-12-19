@@ -33,6 +33,8 @@ public class SearchPage extends SuiteManager {
        // DriverManager.driver.findElement(By.xpath("//input[@type='search']")).sendKeys("ruby");
         //DriverManager.driver.findElement(By.xpath("//input[@type='search']"));
 
+
+
     }
 
 
